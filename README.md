@@ -1,23 +1,22 @@
 # 救猫咪故事 skill 套件
 
-基于布莱克·斯奈德《救猫咪》三部曲提炼的 6 个 skill。所有框架严格对应原书，不脑补。
+基于布莱克·斯奈德《救猫咪》三部曲提炼的 5 个 skill。所有框架严格对应原书，不脑补。
 
-**1 个编排器 + 5 个分段工具**：`stc-create` 是端到端创作主流程（导演），调度下面 5 个分段 skill。只想做一环就直接调分段 skill；想从方向一路写成完整作品就用 stc-create。
+**1 个编排器 + 4 个分段工具**：`stc-create` 是端到端创作主流程（导演），调度下面 4 个分段 skill。只想做一环就直接调分段 skill；想从方向一路写成完整作品就用 stc-create。
 
-## 6 个 skill
+## 5 个 skill
 
 | 类型 | skill | 场景 | 输入 → 输出 |
 |---|---|---|---|
-| 🎬 编排器 | `stc-create` | 给个方向，从零一路写成完整作品 | 方向 → 7阶段流水线（分阶段交付+确认）|
+| 🎬 编排器 | `stc-create` | 给个方向，从零一路写成完整作品 | 方向 → 多阶段流水线（分阶段交付+确认）|
 | ① 点子 | `stc-idea-check` | 动笔前验证点子立不立得住 | 点子 → 四要素+十类型+主干5问+原始性+改写故事线 |
-| ② 结构 | `stc-beatsheet` | 要动笔了，搭结构骨架 | 点子 → 三世界图景 + BS2 15节拍大纲 |
+| ② 结构 | `stc-beatsheet` | 要动笔了，搭结构骨架 | 点子 → 三世界图景 + BS2 15节拍 + 7点对外推介 |
 | ③ 查改 | `stc-diagnose` | 写完/卡住，查问题改稿 | 故事文本 → 主干5问+9条检查+绿灯50问+专项检测 |
-| ④ 推介 | `stc-pitch` | 把故事讲给别人听/卖 | 故事 → logline + 贝蒂7点推销稿 |
-| ⑤ 心法 | `stc-first-aid` | 卡壳/没灵感/怀疑自己/定方向 | 困境 → 对应急救法 + 下一步动作 |
+| ④ 心法 | `stc-first-aid` | 卡壳/没灵感/怀疑自己/定方向 | 困境 → 对应急救法 + 下一步动作 |
 
 ## 端到端流程
 
-完整流程定义见 `stc-create/SKILL.md`（7 阶段：方向澄清 → idea-check → 三个世界 → beatsheet → 分场写作 → diagnose → pitch，每阶段交付 + 用户确认 + 失败即停）。**流程只在 stc-create 一处定义**，本文件不重复，避免母子对不齐。
+完整流程定义见 `stc-create/SKILL.md`（方向澄清 → idea-check → 三个世界 → beatsheet → 分场写作 → diagnose → 对外钩子[可选]，每阶段交付 + 用户确认 + 失败即停）。**流程只在 stc-create 一处定义**，本文件不重复，避免母子对不齐。
 
 ## 文件结构
 
@@ -30,13 +29,11 @@ save-the-cat/
 │   ├── SKILL.md
 │   └── references/genres.md            # 十类型详解（3元素+3判断标准）
 ├── stc-beatsheet/
-│   ├── SKILL.md                        # 含"先画三个世界"
+│   ├── SKILL.md                        # 含三个世界 + 7点对外推介
 │   └── references/beatsheet-detail.md  # 泰坦尼克号/阿甘正传逐拍案例
 ├── stc-diagnose/
 │   ├── SKILL.md
 │   └── references/greenlight-checklist.md  # 50问绿灯清单
-├── stc-pitch/
-│   └── SKILL.md
 └── stc-first-aid/
     └── SKILL.md
 ```
@@ -49,9 +46,14 @@ save-the-cat/
 - **A/B故事**：A=实体目标(剧情) / B=精神目标(主题)，必须编结
 - **原始吗**：全书试金石——驱动力是否落到生存/饥饿/性/保护所爱/死亡恐惧
 
+## 设计原则
+
+- **按使用场景切 skill，不按框架维度切**：避免同一原则（如 logline/原始性/主干5问）在多个 skill 重复。同一原则在"写前""写后"两阶段复检不算重复。
+- 2026-07-29 初版 6 skill（含 stc-pitch）；审查后发现 stc-pitch 内容 90% 是 idea-check(logline) + beatsheet(7点节拍) 的重组，且"卖剧本给制片人"场景与内容创作场景不匹配——**删除 stc-pitch，7点推销并入 beatsheet，套件精简为 5 skill**。
+
 ## 数据来源
 
-全部内容来自 `/Users/yang/projects/xz/00_输入区/收件箱/救猫咪三部曲.md`（197 条划线，三本合一）。三个世界的定义因划线仅有引用、缺第三章原文，补充自 savethecat.com 官网第三章 PDF（Transformation Machine）。各 skill 引用的原文框架均为原书固定术语，未做臆造。
+全部内容来自《救猫咪》三部曲划线笔记（197 条，三本合一）。三个世界的定义因划线仅有引用、缺第三章原文，补充自 savethecat.com 官网第三章 PDF（Transformation Machine）。各 skill 引用的原文框架均为原书固定术语，未做臆造。
 
 ## 适用范围
 
