@@ -1,4 +1,4 @@
 interface:
   display_name: "救猫咪·节拍大纲"
-  short_description: "使用三个世界和 BS2 十五节拍，为故事搭建清楚完整的整体结构骨架。"
-  default_prompt: "请使用 $stc-beatsheet 把这个已确认的故事点子整理成三个世界与 BS2 十五节拍大纲。"
+  short_description: "把确认的故事核心铺成三个世界与 BS2 十五节拍的整体结构。"
+  default_prompt: "请使用 $stc-beatsheet 把这张已确认的故事核心卡整理成三个世界与 BS2 十五节拍大纲。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "救猫咪·场景写作"
+  short_description: "把确认的场景卡写成有行动、冲突、潜台词和转变的场景正文。"
+  default_prompt: "请使用 $stc-scene-write 按这张场景卡写出可读可演的场景正文，不要改动已确认的故事主干。"

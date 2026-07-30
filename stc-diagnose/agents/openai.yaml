@@ -1,4 +1,4 @@
 interface:
   display_name: "救猫咪·故事诊断"
-  short_description: "依据用户文本证据，诊断故事主干、节拍、场景设计与表达层问题。"
+  short_description: "依据现有文本证据定位故事问题，并给出分层、有顺序的改稿单。"
   default_prompt: "请使用 $stc-diagnose 诊断这份故事文本，先指出做得好的地方，再按证据给出改写优先级。"

@@ -1,4 +1,4 @@
 interface:
-  display_name: "救猫咪·点子验证"
-  short_description: "在动笔前验证故事点子、类型、主干问题与一句话故事线是否成立。"
-  default_prompt: "请使用 $stc-idea-check 检查这个故事点子是否立得住，并给出有依据的改写方向。"
+  display_name: "救猫咪·点子发展"
+  short_description: "把模糊方向发展成主角、目标、对抗、主题和变化清楚的故事核心。"
+  default_prompt: "请使用 $stc-idea-check 帮我把这个模糊点子发展成一张可以继续搭结构的故事核心卡。"
