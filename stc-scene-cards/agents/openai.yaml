@@ -1,0 +1,4 @@
+interface:
+  display_name: "救猫咪·场景卡"
+  short_description: "把已确认的节拍骨架拆成包含冲突、转变和退出后果的可写场景卡。"
+  default_prompt: "请使用 $stc-scene-cards 把这份节拍表拆成可逐场写作的场景卡。"

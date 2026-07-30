@@ -1,0 +1,4 @@
+interface:
+  display_name: "救猫咪·点子验证"
+  short_description: "在动笔前验证故事点子、类型、主干问题与一句话故事线是否成立。"
+  default_prompt: "请使用 $stc-idea-check 检查这个故事点子是否立得住，并给出有依据的改写方向。"

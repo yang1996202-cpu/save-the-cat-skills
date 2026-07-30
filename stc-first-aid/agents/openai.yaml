@@ -1,0 +1,4 @@
+interface:
+  display_name: "救猫咪·创作急救"
+  short_description: "为创作者卡壳、失去方向或动力时提供来自原书的可执行创作急救。"
+  default_prompt: "请使用 $stc-first-aid 判断我当前的创作卡点，并只给最合适的急救法和下一步动作。"
