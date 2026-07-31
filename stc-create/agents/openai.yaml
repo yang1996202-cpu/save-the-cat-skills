@@ -1,4 +1,4 @@
 interface:
   display_name: "救猫咪·创作总编排"
-  short_description: "识别故事所处阶段，调度单一职责 skill 并管理交接与回退。"
-  default_prompt: "请使用 $stc-create 判断我的故事现在在哪一步，并带我逐阶段发展成完整作品。"
+  short_description: "守住故事主线，编排完整创作或诊断后的实际重写。"
+  default_prompt: "请使用 $stc-create 带我完成这个故事；如果已有稿件，先找主要病根再直接改稿。"
