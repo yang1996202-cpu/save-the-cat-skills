@@ -151,7 +151,7 @@ flowchart TD
 
 主要资料是《救猫咪》三部曲的 197 条微信读书划线、书评与个人想法，不是三本书全文。原始文件不复制到公开仓库，也不由本项目修改。
 
-- [`references/source-ledger.md`](references/source-ledger.md)：方法行号、唯一主责、官方补充、整理者延伸和已废弃污染。
+- [`references/source-ledger.md`](references/source-ledger.md)：供本地维护者回查的方法行号、唯一主责、官方补充和整理者延伸；公开仓库不含原始划线正文，runtime 不依赖这些行号。
 - [`references/story-creation-contract.md`](references/story-creation-contract.md)：跨阶段共同创作主线。
 - `scripts/verify-source.sh /path/to/救猫咪三部曲.md`：只读核对原始文件哈希、行数和字节数。
 
