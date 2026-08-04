@@ -1,0 +1,4 @@
+interface:
+  display_name: "救猫咪·故事创作"
+  short_description: "守住故事主线，编排完整创作或诊断后的实际重写。"
+  default_prompt: "请使用 $save-the-cat 带我完成这个故事；如果已有稿件，先找主要病根再直接改稿。"
